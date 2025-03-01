@@ -14,7 +14,7 @@ Merge: Combining changes from one branch into another, resolving conflicts if ne
 Conflict: Occurs when changes in two branches affect the same part of the code and require manual resolution.
 Tagging: Marks specific points in the history, such as release versions.
 
-###Why GitHub is Popular
+### Why GitHub is Popular
 GitHub is a cloud-based platform built on Git, which offers a range of features to make version control and collaboration easier:
 
 Collaboration: Facilitates teamwork with pull requests, code reviews, and discussions.
@@ -261,7 +261,7 @@ This command creates a new branch named branch_name and switches to it. The -b f
 
 2. Working on the Branch
 Once you're on your new branch, you can make changes to the codebase as needed. Add, modify, or delete files, and commit your changes:
-# Make changes to your files
+Make changes to your files
 git add <files>
 git commit -m "Description of changes"
 
@@ -274,24 +274,24 @@ When you're ready to integrate your changes back into the main codebase, you typ
 Command to Pull Latest Changes: git pull origin main
 Resolve any conflicts manually in your code editor.
 
-6. Merge the Branch
+5. Merge the Branch
 Once your PR is reviewed and approved, the branch can be merged into the main codebase. On GitHub, this is done via the "Merge" button on the PR page.
 The PR will combine the changes from the feature branch into the main branch. If everything is in order, this will complete the process.
 Command to Merge (locally):
-### Switch back to the main branch
+#### Switch back to the main branch
 git checkout main
-### Fetch the latest changes from the remote repository
+#### Fetch the latest changes from the remote repository
 git pull origin main
-### Merge your feature branch into the main branch
+#### Merge your feature branch into the main branch
 git merge feature-branch
-### Push the merged changes to the remote repository
+#### Push the merged changes to the remote repository
 git push origin main
 
-7. Cleaning Up/deleting branch 
+6. Cleaning Up/deleting branch 
 After merging, it's good practice to delete the feature branch, both locally and on the remote repository:
 #### Delete the local branch
 git branch -d feature-branch
-### Delete the remote branch
+#### Delete the remote branch
 git push origin --delete feature-branch
 Deleting branches reduces clutter and ensures that only active work remains in the repository.
 
